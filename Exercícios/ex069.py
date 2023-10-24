@@ -22,3 +22,4 @@ while n1 != 'n' and n1 != 'N':
             n5 += 1
         if n3 == 2 and n4 < 20 :
             n6 += 1
+print('Tem',n2,'pessoas com mais de 18 anos,foram cadastrados',n5,'homens e tem ',n6,'mulheres com menos de 20 anos.')
