@@ -13,13 +13,12 @@ while n1 != 'n' and n1 != 'N':
         n3 = int(input('Digite o sexo de uma pessoa, 1 para homem e 2 para mulher: '))
     n4 = int(input('Digite a idade dessa pessoa: '))
     n1 = input('Quer continuar? ')
-    while n1 != 'S'and n1 != 's' and n1 != 'n' and n1 != 'N':
+    while n1 != 'S' and n1 != 's' and n1 != 'n' and n1 != 'N':
         n1 = input('Quer continuar? ')
-    if n1 != 'n'and n1 != 'N':
-        if n3 > 18 :
-            n2 += 1
-        if n4 == 1:
-            n5 += 1
-        if n3 == 2 and n4 < 20 :
-            n6 += 1
+    if n4 > 18:
+        n2 += 1
+    if n3 == 1:
+        n5 += 1
+    elif n3 == 2 and n4 <= 20:
+        n6 += 1
 print('Tem',n2,'pessoas com mais de 18 anos,foram cadastrados',n5,'homens e tem ',n6,'mulheres com menos de 20 anos.')
