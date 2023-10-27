@@ -10,16 +10,16 @@ valor = float(input('Digite um valor a ser sacado: '))
 while valor < 1:
     n1 = float(input('Digite um valor a ser sacado: '))
 while valor != 0:
-    if valor >= 50:
+    while valor >= 50:
         valor -= 50
         nota1 += 1
-    if valor >= 20:
+    while valor >= 20:
         valor -= 20
         nota2 += 1
-    if valor >= 10:
+    while valor >= 10:
         valor -= 10
         nota3 += 1
-    if valor >= 1:
+    while valor >= 1:
         valor -= 1
         nota4 += 1
 print('Serão entregues',nota1,'nota(s) de R$50,00,',nota2,'nota(s) de R$20,00,',nota3,'nota(s) de R$10,00,',nota4,'nota(s) de R$1,00.')
